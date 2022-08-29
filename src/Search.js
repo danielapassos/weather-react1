@@ -24,9 +24,6 @@ export default function Search() {
     axios.get(apiUrl).then(displayWeather);
   }
 
-  function showTemperature(response) {
-    setTemperature(response.data.main.temp);
-  }
 
   function updateCity(event) {
     setCity(event.target.value);
